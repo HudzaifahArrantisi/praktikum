@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>login authentacion</title>
+</head>
+<body>
+    <h2>login</h2>
+    <form id="loginForm" onsubmit="login()">
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Passowrd :</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <button type="submit" value="login"></button>
+        <button type="reset" value="batal"></button>
+        <br><br>
+        <input type="submit" value="login">
+        <input type="reset" value="batal">
+    </form>
+
+    <!--jawa-->
+    <script>
+        function login(){
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let form = document.getElementById( "loginForm");
+
+// usrname danpassword telah sesuai atau tidak
+            if (username == "ujai" &&  password == "123"){
+                alert("login berhasil");
+                form.setAttribte("action", "../projekUTS/index.html");
+            } else{
+                alert("login gagal");
+
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

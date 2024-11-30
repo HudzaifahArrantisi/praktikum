@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+    <style>
+        .container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #box {
+            width: 50%;
+            border: 1px solid black;
+            height: 400px;
+            padding: 10px;
+            margin: 0 auto 10px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+        #pesan {
+            width: 45%;
+            padding: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box"></div>
+        <input type="text" id="pesan" placeholder="Tulis pesan Anda di sini...">
+        <input type="button" value="Kirim" onclick="chat()">
+    </div>
+    <script>
+        let chatbox = document.getElementById("box");
+        let pesananku = document.getElementById("pesan");
+
+        function chat() {
+            if (pesananku.value.trim() !== "") { // Cek jika input tidak kosong
+                let paragraf = document.createElement("p");
+                paragraf.textContent = pesananku.value;
+                chatbox.appendChild(paragraf);
+                pesananku.value = ""; // Kosongkan input setelah dikirim
+            } else {
+                alert("Pesan tidak boleh kosong!");
+            }
+        }
+    </script>
+</body>
+</html>
