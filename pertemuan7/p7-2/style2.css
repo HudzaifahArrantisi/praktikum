@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+#main{
+    display: flex;
+    flex: 1;
+}
+
+#main>article{
+    flex: 1;
+    order: 1;
+    
+}
+
+#main>nav,
+#main>aside{
+    flex: 0 0 20vw;
+
+}
+#main>nav{
+    background: violet;
+    order: 3;
+}
+main>footer{
+    flex: auto;
+}
+
+#main>aside{
+    background: rgb(21, 131, 226);
+    order: 2;
+}
+
+header{
+    background: rgb(0, 247, 255);
+    height: 20vh;
+}
+
+footer{
+    background: darksalmon;
+    height: 50vh;
+}
+
+header,article,nav,aside{
+    padding: 1em;
+}
