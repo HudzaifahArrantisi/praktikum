@@ -1,0 +1,138 @@
+body{
+    background-color: coral;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 80s linear infinite;
+  
+}
+
+h1{
+    background-color: #f0000c;
+    font-variant: small-caps;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#header{
+    background-color: rgb(0, 81, 255);
+    border: 1px dotted rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(255, 0, 212);
+}
+
+blockquote {
+    background-color: #22114e;
+    color: rgb(223, 217, 217);
+    border: 3px dotted red;margin: 1%;
+    border-right: 2px dotted black;
+    border-bottom: 2px dotted black;
+}
+
+.profile {
+    text-align: center; 
+    padding: 10px 0; 
+}
+
+.profile ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: inline-flex; 
+}
+
+.profile ul li {
+    margin: 0 15px; 
+}
+
+.profile ul li a {
+    color: rgb(250, 0, 0); 
+    text-decoration: none; 
+    font-size: 18px; 
+}
+
+.profile ul li a:hover {
+    color: #f0a500;
+}
+
+.isi p:first-child::first-letter {
+    color: blue;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.isi .jawa{
+    background-color: #ffffff;
+}
+
+p{
+    text-align: justify;
+    width: fit-content;
+}
+p{
+  text-indent: 2em;
+}
+
+.gambar{
+    text-align: center;
+}
+
+.gambar img{
+    height: 220px;
+    width: 220px;
+}
+
+.koleksi{
+    background-color: rgb(255, 207, 50);
+}
+
+.koleksi img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+}
+
+.promo{
+    color: blue;
+    text-align: center;
+}
+
+#promo .gambar{
+    background-color: #f0000c;
+}
+
+.promo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: cadetblue;
+    color: burlywood;
+}
+
+.promo ol a{
+    background-color: #f0000c;
+    width: 5%;
+    padding: 1%;
+}
+
+.harga{
+    text-align: center;
+    list-style-type: none;
+    padding: 2%;
+    margin: auto;
+}
+
+#tombol{
+    background-color: yellow;
+    color: darkred;
+    width: 10%;
+    padding: 5px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+    
+
