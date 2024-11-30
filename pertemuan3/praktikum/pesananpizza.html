@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM PESANAN PIZZA</title>
+    <title>Pesan Pizza</title>
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Form Pesanan Pizza</legend>
+
+        <h1>SELAMAT  DATANG DI LALALO PIZZA</h1> 
+        <p>Silahkan Isi Pesnan Anda</p>
+        <form method="post" action="tugas_hasil.html">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Informasi Anda</td>
+                    </tr>
+                </thead>
+                <body><br>
+                    <tr>
+                        <br>
+                        <td><label for="nama">Nama</label></td>
+                        <td><input type="text" id="nama" name="nama" required></td>
+                   </tr>
+                   <tr>
+                    <td><label for="Alamat">Alamat</label></td>
+                    <td><input type="text" id="nama" name="nama" required></td>
+               </tr>
+               <tr>
+                    <td><label for="notelp">No Telpon</label></td>
+                    <td><input type="text" id="nama" name="nama" required></td>
+               </tr>
+             <tr>
+                 <td><label for="email">Email</label></td>
+                 <td><input type="text" id="email" name="email" required></td>
+             </tr>
+             <tr>
+                <td><label for="note">Notes pesnan :</label></td>
+                <td><textarea name="note" id="note" required
+                    placeholder="Tidak Lebih dari 400 karakter"></textarea></td>
+             </tr>
+                </body>
+            </table>
+
+            <h4>Pilih Salah Satu</h4>
+
+            <label for="crust">Crust</label>
+            <br>
+
+            <input type="radio" id="crust" name="crust" value="km">
+            <label for="km">Kacang Mede</label><br>
+
+            <input type="radio" id="crust" name="crust" value="sp">
+            <label for="sp">Susu pontianak</label><br>
+
+            <input type="radio" id="crust" name="crust" value="bs">
+            <label for="bs">Biji salak</label><br>
+
+            <input type="radio" id="crust" name="crust" value="am">
+            <label for="am">anggrek mekar</label><br>
+            <br>
+
+            <label for="">Topping (pilih lebih dari 1 )</label><br>
+            <input type="checkbox" id="" name="Topping" value="">Saos tomat<br>
+            <input type="checkbox" id="" name="Topping" value="">Jamurr <br>
+            <input type="checkbox" id="" name="Topping" value="">Ayam <br>
+            <input type="checkbox" id="" name="Topping" value="">Beef <br>
+
+            <h4>Number</h4>
+            <label for="">Pesnan Pizza  :</label>
+            <input type="number" min="1" max="1">
+
+            <button type="submit" value="pesan">Pesan sekarang</button><br>
+            <button type="reset" value="reset">reset</button><br>
+
+
+          </form>   
+    </fieldset>
+    </folder>
+
+    
+</body>
+</html>
