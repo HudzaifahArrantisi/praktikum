@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.foto{
+    height: 10%;
+    margin: 10px;
+    padding-left: 5%;
+    border-radius: 30%;
+
+}
+
+.foto img{
+    width: 300px;
+    height: 300px;
+}
+
+.bawah{
+    padding: 10%;
+    padding-top: 1%;
+    padding-left: 10%;
+    margin: 15em;
+    display: flex;
+    margin-top: 5%;
+
+}
+
+.bawah,img{
+    width: 300px;
+    height: 200px;
+}

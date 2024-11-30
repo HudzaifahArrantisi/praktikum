@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(255, 127, 202);
+    margin-left: 60px;
+
+}
+.box{
+    width: 250px;
+    height: 600px;
+    border: 1px solid black;
+    float: left;
+    margin: 20px;
+
+}
+
+.red{
+    background-color: red;
+    border-radius: 200%;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+    border-radius: 200%;
+}
+
+.blue{
+    background-color: blue;
+}
