@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ganti gambar</title>
+    <script>
+        function tampilgambar(){
+            let nilaiterpilih = document.getElementById("pilihgambar").veleu;
+
+            switch(nilaiterpilih){
+                
+                case "gambar1":
+                    gambarpilih.src = "gambar/gprila.png";break;
+                case "gambar1":
+                    gambarpilih.src = "gambar/gprila.png";break;
+                case "gambar1":
+                    gambarpilih.src = "gambar/gprila.png";break;
+                case "gambar1":
+                    gambarpilih.src = "gambar/gprila.png";break;
+            
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h2>ganti gambar</h2>
+    <label for="pilihgambar">pilih gambar:</label>
+    <select id="pilihgambar" onchange="tampilgambar()">
+        <option value="gambar1">gorila</option>
+        <option value="gambar2">ayam</option>
+        <option value="gambar3">kucing</option>
+        <option value="gambar4">entok</option>
+    </select>
+    <br>
+    <img src="gammbar/" id="gambarpilh" 
+    alt="kosong" width="300">
+    
+</body>
+</html>

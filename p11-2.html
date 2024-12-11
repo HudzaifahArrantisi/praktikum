@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function hitungkurs(){
+            let nilai = document.getElementById("nilai").veleu;
+            let kurs = document.getElementById("kurs").veleu;
+            let hasil = nilai * kurs;
+            document.getElementById("hasil").veleu = hasil;
+
+        }
+
+    </script>
+</head>
+<body>
+    <marquee onmouseover="this.stop()" onmouseout="this.start()">
+        konversi mata uang</marquee>
+
+ <div style="padding:10px;background: yellow;border: 1px dotted red;">
+        nilai <input type="text" name="nilai" >
+<form>
+        <select id="kurs" onchange="hitungkurs()">
+            <option value="">-- pilih kurs--</option>
+            <option value="15800">Dollar</option>
+            <option value="18000">euro</option>
+            <option value="2100">yuan</option>
+            <option value="1000">ringgit</option>
+            <option value="4000">riyal</option>
+        </select>
+        <input type="text" name="hasil">
+    </form>
+
+ </div>       
+    
+</body>
+</html>

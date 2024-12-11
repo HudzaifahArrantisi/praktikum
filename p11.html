@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kalkulator Sederhana</title>
+    <script>
+        function jumlahkan() {
+            let x = parseFloat(document.getElementById("bil").value); 
+            let y = parseFloat(document.getElementById("bil2").value); 
+            let z = 0; 
+
+            if (document.getElementById("tambah").checked) {
+                z = x + y;
+            } else if (document.getElementById("kurang").checked) {
+                z = x - y;
+            } else if (document.getElementById("bagi").checked) {
+                z = x / y;
+            } else if (document.getElementById("kali").checked) {
+                z = x * y;
+            } else {
+                alert("Silakan pilih operasi aritmatika!");
+                return;
+            }
+
+            document.getElementById("hasil").innerHTML = z;
+        }
+    </script>
+</head>
+<body>
+    <h2>Kalkulator Sederhana</h2>
+    <form>
+        Bilangan 1: <input type="text" id="bil">
+        <br>
+        Bilangan 2: <input type="text" id="bil2">
+        <br>
+
+        Pilih operasi aritmatika:
+        <input type="radio" name="ht" id="tambah"> +
+        <input type="radio" name="ht" id="kurang"> -
+        <input type="radio" name="ht" id="bagi"> /
+        <input type="radio" name="ht" id="kali"> x
+        <br>
+
+        <input type="button" value="Hitung" onclick="jumlahkan()">
+        <br>
+
+        Hasil: <span id="hasil"></span>
+    </form>
+</body>
+</html>
